@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="このサイトは追浜中の修学旅行についてがわかるホームページです！様々な最新情報をお届けします！">
+    <meta name="keywords" content="かいちゃんベイビー, ホームページ, 最新情報, 動画, 写真, 活動情報,youtube,minecraft,マインクラフト,かいちゃん,youtuber,ウェブサイト,実況者,ゆっくり,ずんだもん">
+    <meta name="author" content="かいちゃんベイビー">
+    <link rel="stylesheet" href="style.css">
+    <title>Kaichan Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        /* 他のスタイルはそのまま */
+    
+        .info img {
+            max-width: 80%; /* 横幅をコンテナに収める */
+            height: auto; /* アスペクト比を維持 */
+            display: block; /* 画像の間の余白を制御 */
+            margin: 10px auto; /* 中央に配置 */
+        }    
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+    
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+        }
+    
+        .sidebar {
+            width: 20%;
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    
+        .sidebar button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            color: #fff;
+            background-color: #555;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        .sidebar button:hover {
+            background-color: #666;
+        }
+    
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+    
+        .info {
+            display: none;
+        }
+    
+        .image-section img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+    
+        .video {
+            margin: 20px 0;
+        }
+    
+        .video img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+        }
+    
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+    
+        .video-section {
+            width: 48%;
+        }
+    
+        #faq {
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+            width: auto;
+            background-color: #fff;
+            position: relative;
+            top: -10px;
+        }
+    
+        #faq h1,
+        #faq h2,
+        #faq h4 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>わんぱくな私たちが万博へ</h1>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <button id="home-btn">ホーム</button>
+            <button id="scratch-btn">京都の紹介</button>
+            <button id="youtube-btn">大阪の紹介</button>
+            <button id="faq-btn">大阪万博質問Q&A</button>
+            <button id="new-btn1">みんなのPRポスター</button>
+            <button id="new-btn2">しおり</button>
+        </div>
+
+        <main>
+            <section id="home" class="info">
+                <h2>基本情報</h2> 
+                <p>日程: 〇月〇日</p>
+                <p>時間: 〇時〇分</p>
+                <p>集合場所: 〇〇駅</p>
+                <p>到達地: 〇〇駅</p>
+                <h2>ねらい</h2>             
+                <p>生徒個々の自立に向けての成長につなげ、「生きる力」を高める</p>             
+                <p>学年、学級集団の民主的・自主的な力を伸ばす</p>
+                <p>日本古来から培われた文化にふれる</p>
+                <h2>目標</h2>
+                <p>実行委員会を組織し、修学旅行の自主的な諸活動を、生徒一人ひとりが自らの手で作り上げていくことで、主体的に取り組む力を身に付ける</p>
+                <p>事後活動にて自らの体感をまとめ、他人に伝えられるよう思考・表現する力を身につけさせる</p>
+                <p>古都の散策から日本の歴史を体感し、大阪万博から最先端の技術を体感することで生徒一人ひとりの視野を広げる</p>
+            </section>
+
+            <section id="scratch" class="info">
+                <h2>京都とは？</h2>
+                <p>京都（きょうと、みやこ、きょうのみやこ、英: Kyoto[1][2][3]）は、日本の地名、都市。794年以降日本の首都であった平安京が位置し、都もしくは京などとも呼ばれていた。古くから日本の政治・文化の中心地として栄え、金閣寺や清水寺をはじめとする文化財が多く残る地域である。
+
+                    現在京都といえば、広義では京都府を、狭義ではその府庁所在地たる自治体の京都市、もしくはその中心部の地域を指す。<a href="https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD" target="_blank">引用Wikipedia</a></p>
+            </section>
+
+            <section id="youtube" class="info">
+                <h2>大阪とは？</h2>
+                    <p>大阪（おおさか、英語: Osaka）は、日本の近畿地方（関西地方）の地名、都市。
+    
+                        律令国では摂津国の範囲であり、近畿の経済・文化の中心地。
+                        
+                        かつては大坂[1][2][3]と表記し、古墳時代から江戸時代以降の長きにわたり、日本経済と文化の中心地であった。そのため、京都と共に上方と呼ばれ、古都・副都・水都としての歴史も持つ。
+                        
+                        現在の「大阪」は、近畿地方に位置する包括的地方公共団体・大阪府や、その府庁所在地であり西日本最大の都市・大阪市を指し、広い意味では大阪市を中心とする京阪神（近畿地方、大阪都市圏〈阪神都市圏〉、京阪神大都市圏、近畿圏など）を漠然と総称することにも使われる。<a href="https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA" target="_blank">引用Wikipedia</a></p>
+            </section>
+
+            <section id="faq" class="info">
+                <h1>大阪万博質問Q&A</h1>
+                <h2>Q: 大阪万博とは？</h2>
+                <h4>A: 大阪万博（正式名：2025年日本国際博覧会）は、</h4><h4>2025年に大阪の夢洲（ゆめしま）で開催される国際博覧会です。</h4>
+            <h4>テーマは「いのち輝く未来社会のデザイン」で、</h4><h4>最先端技術や文化交流を通じて持続可能な社会を目指します。</h4>
+                <h2>Q: 何ができるの？</h2>
+                <h4>A: 最先端技術の体験や
+                    世界の文化交流、
+                    SDGs（持続可能な開発目標）の学びなどができます</h4>
+                <h2>Q: いつ開催されるの？</h2>
+                <h4>A: 開始日：2025年4月13日
+                    終了日：2025年10月13日</h4>
+            </section>
+
+            <section id="new-section1" class="info">
+                <h2>みんなのPRポスター</h2>
+                <img src="1.png">
+                <img src="2.png">
+                <img src="3.png">
+                <img src="4.png">
+                <img src="5.png">
+                <img src="6.png">
+                <img src="7.png">
+                <img src="8.png">
+                <img src="9.png">
+                <img src="10.png">
+                <img src="11.png">
+                <img src="12.png">
+                <img src="13.png">
+                <img src="14.png">
+                <img src="15.png">
+                <img src="16.png">
+                <img src="17.png">
+                <img src="18.png">
+                <img src="19.png">
+                <img src="20.png">
+                <img src="21.png">
+                <img src="22.png">
+                <img src="23.png">
+                <img src="24.png">
+                <img src="25.png">
+                <img src="26.png">
+                <img src="27.png">
+                <img src="28.png">
+                <img src="29.png">
+                <img src="30.png">
+                <img src="31.png">
+                <img src="32.png">
+                <img src="33.png">
+                <img src="34.png">
+                <img src="35.png">
+                <img src="36.png">
+                <img src="37.png">
+                <img src="38.png">
+                <img src="39.png">
+                <img src="40.png">
+                <img src="41.png">
+                <img src="42.png">
+                <img src="43.png">
+                <img src="44.png">
+                <img src="45.png">
+                <img src="46.png">
+                <img src="47.png">
+                <img src="48.png">
+            </section>
+
+            <section id="new-section2" class="info">
+                <h2>しおり</h2>
+                <p>しおり</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-2025 kaichanbaby</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.info');
+            const buttons = {
+                'home-btn': 'home',
+                'scratch-btn': 'scratch',
+                'youtube-btn': 'youtube',
+                'faq-btn': 'faq',
+                'new-btn1': 'new-section1',
+                'new-btn2': 'new-section2'
+            };
+
+            function hideAllSections() {
+                sections.forEach(section => section.style.display = 'none');
+            }
+
+            Object.keys(buttons).forEach(buttonId => {
+                const sectionId = buttons[buttonId];
+                document.getElementById(buttonId).addEventListener('click', () => {
+                    hideAllSections();
+                    document.getElementById(sectionId).style.display = 'block';
+                });
+            });
+
+            // 初期表示
+            document.getElementById('home').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
