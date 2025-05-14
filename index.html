@@ -140,6 +140,9 @@
             <button id="faq-btn">大阪万博質問Q&A</button>
             <button id="new-btn1">みんなのPRポスター</button>
             <button id="new-btn2">しおり</button>
+            <button id="cover-btn">応募表紙一覧</button>
+
+
         </div>
 
         <main>
@@ -248,10 +251,35 @@
                 <img src="48.png">
             </section>
 
-            <section id="new-section2" class="info">
-                <h2>しおり</h2>
-                <p>しおり</p>
-            </section>
+<section id="new-section2" class="info">
+    <div id="shiori-container"></div>
+    <script>
+        const shioriContainer = document.getElementById("shiori-container");
+        for (let i = 1; i <= 45; i++) {
+            const num = String(i).padStart(2, '0'); // ゼロ埋め
+            const img = document.createElement("img");
+            img.src = `R７しおり完成版-${num}.png`;
+            img.alt = `しおり ${i} ページ目`;
+            img.style.maxWidth = "100%";
+            img.style.marginBottom = "20px";
+            shioriContainer.appendChild(img);
+        }
+    </script>
+<section id="cover-section" class="info">
+    <h2>応募表紙一覧</h2>
+    <div>
+        <img src="修学旅行表紙候補一覧_page-0001.jpg" alt="表紙候補1" style="max-width: 100%; margin-bottom: 20px;">
+        <img src="修学旅行表紙候補一覧_page-0002.jpg" alt="表紙候補2" style="max-width: 100%; margin-bottom: 20px;">
+        <img src="修学旅行表紙候補一覧_page-0003.jpg" alt="表紙候補3" style="max-width: 100%; margin-bottom: 20px;">
+        <img src="修学旅行表紙候補一覧_page-0004.jpg" alt="表紙候補4" style="max-width: 100%; margin-bottom: 20px;">
+        <img src="修学旅行表紙候補一覧_page-0005.jpg" alt="表紙候補5" style="max-width: 100%; margin-bottom: 20px;">
+    </div>
+</section>
+
+
+
+
+
         </main>
     </div>
 
@@ -268,7 +296,9 @@
                 'youtube-btn': 'youtube',
                 'faq-btn': 'faq',
                 'new-btn1': 'new-section1',
-                'new-btn2': 'new-section2'
+                'new-btn2': 'new-section2',
+                'cover-btn': 'cover-section'
+
             };
 
             function hideAllSections() {
